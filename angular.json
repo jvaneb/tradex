@@ -22,10 +22,14 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/icono.ico"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/nucleo-icons.css",
+              "src/assets/css/blk-design-system.min.css",
+              "src/assets/demo/demo.css"
             ],
             "scripts": []
           },
