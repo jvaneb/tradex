@@ -1,0 +1,44 @@
+.h0 {
+    color: #ff1802 !important;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 42.99px;
+}
+
+.txt-h3-crypto {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.btn-start-trading {
+    border-radius: 5px;
+    border: 1px solid #ff1802;
+    /* padding: 16px, 42px, 16px, 42px; */
+    gap: 7px;
+    color: #ffffff;
+    background: #ff1802 !important;
+}
+
+.btn-start-trading:hover {
+    background: #0e1422 !important;
+    transition: all 0.5s ease;
+}
+
+.btn-new-crypto {
+    border-radius: 5px;
+    border: 1px solid #ff1802;
+    gap: 7px;
+    background: #0e1422;
+    box-shadow: 0px -4px 14px 0px #EA36365E inset;
+    color: #ffffff;
+}
+
+.btn-new-crypto:hover{
+    background: #ff1802 !important;
+    transition: all 0.5s ease;
+}
+
+.chevron-personalized {
+    color: #ff1802
+}
