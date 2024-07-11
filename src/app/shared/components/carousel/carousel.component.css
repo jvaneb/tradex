@@ -1,0 +1,39 @@
+.carousel-inner {
+    overflow: hidden;
+    margin-bottom: 0.5%;
+}
+  
+.img-wrapper {
+    display: flex;
+    width: max-content;
+}
+  
+.img-carousel {
+    margin-right: 25px;
+}
+  
+.scroll-left {
+    animation: scroll-left 60s linear infinite;
+}
+  
+.scroll-right {
+    animation: scroll-right 60s linear infinite;
+}
+  
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 2));
+    }
+}
+  
+@keyframes scroll-right {
+    0% {
+        transform: translateX(calc(-100% / 2));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

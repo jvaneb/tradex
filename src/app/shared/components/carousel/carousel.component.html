@@ -1,0 +1,11 @@
+<div class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="img-wrapper" [ngClass]="{'scroll-left': direction === 'left', 'scroll-right': direction === 'right'}">
+          <img *ngFor="let imagen of imagenes" [src]="imagen.url" width="232" height="62" class="d-block w-20 img-carousel" [alt]="imagen.alt">
+          <img *ngFor="let imagen of imagenes" [src]="imagen.url" width="232" height="62" class="d-block w-20 img-carousel" [alt]="imagen.alt">
+        </div>
+      </div>
+    </div>
+</div>
+  

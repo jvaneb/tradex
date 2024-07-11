@@ -5,6 +5,17 @@
     line-height: 42.99px;
 }
 
+.h1-personalized {
+    color: #ff1802;
+    font-weight: 500;
+}
+
+h4 {
+    margin-top: -0.5rem;
+    font-size: 12px;
+    font-weight: 400;
+}
+
 .txt-h3-crypto {
     margin-top: -1rem;
     margin-bottom: 2rem;
@@ -25,7 +36,7 @@
     transition: all 0.5s ease;
 }
 
-.btn-new-crypto {
+.btn-new-crypto, .btn-make-profits {
     border-radius: 5px;
     border: 1px solid #ff1802;
     gap: 7px;
@@ -34,11 +45,48 @@
     color: #ffffff;
 }
 
-.btn-new-crypto:hover{
+.btn-new-crypto:hover, .btn-make-profits:hover{
     background: #ff1802 !important;
     transition: all 0.5s ease;
 }
 
 .chevron-personalized {
     color: #ff1802
+}
+
+.img-chart {
+    position: relative;
+}
+
+.btn-make-profits {
+    position: absolute;
+    top: calc(90%);
+    z-index: 2;
+    margin-bottom: 2%;
+}
+
+.div-lead {
+    background-color: #0E1422;
+}
+
+.h1-txt-lead {
+    margin-top: 8%;
+}
+
+.txt-personalized-trad {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 28.97px;
+}
+
+.txt-personalized-x {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 94.39px;
+    font-family: "Miltonian", serif;
+    font-style: normal;
+    color: #ff1802;
+    position: relative;
+    top: 10px;
 }
