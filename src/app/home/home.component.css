@@ -67,10 +67,11 @@ h4 {
 
 .div-lead {
     background-color: #0E1422;
+    padding: 3em 4em 3em;
 }
 
 .h1-txt-lead {
-    margin-top: 8%;
+    padding: 2% 0;
 }
 
 .txt-personalized-trad {
@@ -90,3 +91,48 @@ h4 {
     position: relative;
     top: 10px;
 }
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.div-card {
+    padding-bottom: 4%;
+}
+
+.h2-personalized-regular {
+    font-weight: 400;
+    font-size: 18pt;
+    line-height: 36px;
+}
+
+.img-forex {
+    width: 35%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.link {
+    padding-top: 2em;
+    text-align: center;
+    font-weight: 400;
+    size: 16px;
+    line-height: 24px;
+}
+.txt-h2-personalized-color {
+    background: linear-gradient(86.41deg, #FF0F06 -12.62%, #F67F10 105.32%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+/* .btn-personalized:active {
+    border: 1px solid #ff1802;
+    background-color: #000000;
+    border-radius: 5px;
+    gap: 7px;
+} */

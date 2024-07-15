@@ -14,30 +14,31 @@
     </div>      
   </div>
 </div>
+
 <div class="img-chart">
   <img src="../../assets/img/backgroung-chart3.png" class="img-fluid">
   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
     <button class="btn-primary btn-lg btn-make-profits" type="button">Learn to Make Profits &nbsp;<i class="fas fa-chevron-right chevron-personalized"></i></button>      
   </div>    
 </div>
+
 <h4 class="text-center text-white">Clickable Demo Account for Trading</h4>
+
 <section class="section section-lg">
   <div class="container">
       <h1 class="text-center text-white">Check Our</h1>
       <h1 class="text-center text-white"><span class="h1-personalized"> Most Traded</span> Currency Pairs</h1>
   </div>
-
   <app-carousel [imagenes]="imagenes" direction="left"></app-carousel>
   <app-carousel [imagenes]="imagenes" direction="right"></app-carousel>
   <app-carousel [imagenes]="imagenes" direction="left"></app-carousel>
-  <app-carousel [imagenes]="imagenes" direction="right"></app-carousel>
-  
+  <app-carousel [imagenes]="imagenes" direction="right"></app-carousel>  
   <br>
   <p class="text-center text-white">What are Currency pairs?</p>
 </section>
 
-<section>
-  <div class="container text-center div-lead">
+<section class="section section-lg">
+  <div class="container div-lead">
     <div class="row">
       <div class="col-md-12">
         <h1 class="text-center text-white h1-txt-lead">
@@ -47,7 +48,92 @@
           <span class="txt-personalized-x">x</span>
         </h1>
       </div>
+    </div> 
+    <div class="row row-cols-1 row-cols-md-2 g-6 div-card">
+      <div *ngFor="let card of cards; let i = index" class="col">
+        <app-card [ngClass]="{'align-left': i % 2 !== 0, 'align-right': i % 2 === 0}"
+          [title]="card.title"  
+          [text]="card.text" 
+          [links]="card.links">
+        </app-card>
+      </div>
     </div>
   </div>
 </section>
 
+<div class="container">
+  <h1 class="text-center text-white"><span class="h1-personalized"> Trade Global Markets</span> With us</h1>
+</div>
+<section class="section section-lg ">
+  <div class="container div-lead">
+    <div class="row">
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Forex</h2>
+        <img src="../../assets/img/forex.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Shares</h2>
+        <img src="../../assets/img/shares.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Commodities</h2>
+        <img src="../../assets/img/commodities.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Indices</h2>
+        <img src="../../assets/img/indices.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Crytp</h2>
+        <img src="../../assets/img/crypto.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">ETFs</h2>
+        <img src="../../assets/img/etfs.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-lg">
+  <div class="container">
+    <h1 class="h1-personalized text-center">Exclusive <span class="text-white">Plans & Bonus</span></h1>
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Club Membership <br> Plans</h2>
+        <h1 class="text-center text-white">Up To 50% Off</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">New Account <br> Bonus</h2>
+        <h1 class="text-center text-white">$ 2,000</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Extra 20% For <br> More Trade</h2>
+        <h1 class="text-center text-white">20% Extra</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Every Referral <br> Bonus</h2>
+        <h1 class="text-center text-white">$ 1,000</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-lg">
+  <div class="container">
+    <h1 class="text-center text-white">Latest News & Top insights From Us</h1>
+    <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Master with our Exclusive reports</h2><br>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized active" aria-pressed="true">Our Ecosystem</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Trading Tools</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Education Centers</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Our Insights</button>
+    </div>
+  </div>
+</section>
