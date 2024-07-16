@@ -8,6 +8,7 @@
 .h1-personalized {
     color: #ff1802;
     font-weight: 500;
+    text-transform: capitalize;
 }
 
 h4 {
@@ -51,7 +52,9 @@ h4 {
 }
 
 .chevron-personalized {
-    color: #ff1802
+    color: #ff1802;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .img-chart {
@@ -130,9 +133,85 @@ h4 {
     font-weight: 400;
 }
 
-/* .btn-personalized:active {
+
+.card-body-personalized{
+    padding: unset;    
+}
+
+.card-personalized {
+    background: transparent;
+}
+
+.card-text-personalized {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.h5-text-personalized {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a5a8ad;
+    margin-top: 3%;
+}
+
+.img-test-blog {
+    height: 12em;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border: 1px solid #2853a5;
+    box-shadow: 0px 0px 7px 0px #4988FF;
+}
+
+.page-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+span.page-indicator.active {
+    margin: 0px 3px;
+}
+  
+.page-indicator.active {
+    background: #ffffff;
     border: 1px solid #ff1802;
-    background-color: #000000;
-    border-radius: 5px;
-    gap: 7px;
-} */
+}
+  
+#cardContainer {
+    position: relative;
+}
+  
+.card-enter-active, .card-leave-active {
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.card-enter, .card-leave-to /* .card-leave-active en <2.1.8 */ {
+    opacity: 0;
+}
+
+a.text-prev, a.text-next {
+    line-height: 5em !important;
+}
+
+a.page-link {
+    padding: 0%;
+}
+
+.page-link {
+    background-color: transparent;
+    text-transform: capitalize;
+    text-decoration: underline !important;
+}
+
+.page-link:hover {
+    background-color: transparent !important;
+}
+  
+  

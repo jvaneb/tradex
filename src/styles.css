@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-.btn-personalized:focus .btn-personalized:active {
-    border-color: 1px solid #ff1802;
+.btn-personalized.active {
+    border: 1px solid #ff1802;
     background-color: #000000;;
 }
 

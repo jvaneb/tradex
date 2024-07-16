@@ -135,5 +135,57 @@
       <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Education Centers</button>
       <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Our Insights</button>
     </div>
+    <br>
+  <br>
+    <h1 class="text-center text-white h1-personalized">Latest financial news & insights around the world.</h1>
+
+    <div class="row row-cols-1 row-cols-md-4 g-5" id="cardContainer">
+      <div class="col" *ngFor="let blog of paginatedBlogs">
+        <div class="card card-personalized" style="width: 18rem;">
+          <img src="{{blog.img}}" class="card-img-top rounded img-test-blog" alt="...">
+          <h5 class="h5-text-personalized">{{ blog.date | date : 'fullDate' }}</h5>
+          <div class="card-body card-body-personalized">
+            <p class="card-text card-text-personalized">{{ blog.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item" [class.disabled]="currentPage === 1" (click)="changePage(currentPage - 1)">
+          <a class="page-link text-prev"><i class="fas fa-chevron-left chevron-personalized"></i> Prev</a>
+        </li>
+        <li class="page-item" *ngFor="let page of totalPagesArray" (click)="changePage(page)">
+          <a class="page-link">
+            <span [class.active]="currentPage === page" class="page-indicator"></span>
+          </a>
+        </li>
+        <li class="page-item" [class.disabled]="currentPage === totalPages" (click)="changePage(currentPage + 1)">
+          <a class="page-link text-next">Next <i class="fas fa-chevron-right chevron-personalized"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <h1 class="text-center text-white">4.7 million traders <span class="h1-personalized">who trust us!</span></h1>
+    <br>
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Total Traders</h2>
+        <br>
+        <h1 class="text-center text-white">1,432,884</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Total Volume</h2>
+        <br>
+        <h1 class="text-center text-white">$60,827,147,559</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Total Traders</h2>
+        <br>
+        <h1 class="text-center text-white">22,731</h1>
+      </div>
+    </div>
   </div>
+  
 </section>

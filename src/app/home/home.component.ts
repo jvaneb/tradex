@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CarouselComponent } from '../shared/components/carousel/carousel.component';
 import { CardComponent } from '../shared/components/card/card.component';
 
@@ -10,7 +10,13 @@ import { CardComponent } from '../shared/components/card/card.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {  
+export class HomeComponent implements OnInit{  
+
+  currentPage = 1;
+  itemsPerPage = 4;
+  paginatedBlogs: any = [];
+  totalPages: number = 0;
+  totalPagesArray: number[] = [];
 
   imagenes = [
     { url: '../../assets/img/currency-nhd.png', alt: 'Descripción de la imagen 1', title: 'Título de la imagen 1' },
@@ -66,4 +72,75 @@ export class HomeComponent {
       ]
     }
   ];
+
+  blogs = [
+    {
+      date: new Date(),
+      text: 'Is there a correlation between bitcoin and the financial markets?',
+      img: '../../assets/img/img2-blog.png'
+    },
+    {
+      date: new Date(),
+      text: 'Is there a correlation between bitcoin and the financial markets?',
+      img: '../../assets/img/img3-blog.png'
+    },
+    {
+      date: new Date(),
+      text: 'Is there a correlation between bitcoin and the financial markets?',
+      img: '../../assets/img/img1-blog.png'
+    },
+    {
+      date: new Date(),
+      text: 'Is there a correlation between bitcoin and the financial markets?',
+      img: '../../assets/img/img4-blog.png'
+    },{
+      date: new Date(),
+      text: 'Is there a correlation between bitcoin and the financial markets?',
+      img: '../../assets/img/img2-blog.png'
+    },
+    {
+      date: new Date(),
+      text: 'n and the financial markets?',
+      img: '../../assets/img/img3-blog.png'
+    },
+    {
+      date: new Date(),
+      text: 'Is there a correlation between bitcoin and the financial markets?',
+      img: ''
+    },
+    {
+      date: new Date(),
+      text: 'Is there a correlation between bitcoin and the financial markets?',
+      img: '../../assets/img/img4-blog.png'
+    }
+  ]  
+
+  ngOnInit() {
+    this.totalPages = Math.ceil(this.blogs.length / this.itemsPerPage);
+    this.totalPagesArray = Array.from({ length: this.totalPages }, (v, k) => k + 1);
+    this.updatePaginatedBlogs();
+  }
+
+  updatePaginatedBlogs() {
+    const cardContainer = document.getElementById('cardContainer');
+    if (cardContainer) {
+      cardContainer.classList.add('card-leave-active');
+      setTimeout(() => {
+        const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+        this.paginatedBlogs = this.blogs.slice(startIndex, startIndex + this.itemsPerPage);
+        cardContainer.classList.remove('card-leave-active');
+        cardContainer.classList.add('card-enter-active');
+      }, 500); // La duración de la transición debe ser la misma que en CSS
+      setTimeout(() => {
+        cardContainer.classList.remove('card-enter-active');
+      }, 1000); // El doble de la duración de la transición para limpiar la clase
+    }
+  }
+
+  changePage(page: number) {
+    if (page > 0 && page <= this.totalPages) {
+      this.currentPage = page;
+      this.updatePaginatedBlogs();
+    }
+  }
 }
