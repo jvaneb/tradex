@@ -50,11 +50,15 @@
       </div>
     </div> 
     <div class="row row-cols-1 row-cols-md-2 g-6 div-card">
-      <div *ngFor="let card of cards; let i = index" class="col">
+      <div *ngFor="let card of cardTwoColumns.cards; let i = index" class="col">
         <app-card [ngClass]="{'align-left': i % 2 !== 0, 'align-right': i % 2 === 0}"
           [title]="card.title"  
           [text]="card.text" 
-          [links]="card.links">
+          [links]="card.links"
+          [cardClass]="card.cardClass"
+          [textClass]="card.textClass"
+          [cardStyle]="card.cardStyle"
+          >
         </app-card>
       </div>
     </div>
@@ -139,8 +143,8 @@
   <br>
     <h1 class="text-center text-white h1-personalized">Latest financial news & insights around the world.</h1>
 
-    <div class="row row-cols-1 row-cols-md-4 g-5" id="cardContainer">
-      <div class="col" *ngFor="let blog of paginatedBlogs">
+    <div class="row row-cols-1 row-cols-md-4 g-5" id="cardContainer1">
+      <div class="col" *ngFor="let blog of cardFourColumnsBlogPaginated.paginatedCards">
         <div class="card card-personalized" style="width: 18rem;">
           <img src="{{blog.img}}" class="card-img-top rounded img-test-blog" alt="...">
           <h5 class="h5-text-personalized">{{ blog.date | date : 'fullDate' }}</h5>
@@ -150,21 +154,11 @@
         </div>
       </div>
     </div>
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center">
-        <li class="page-item" [class.disabled]="currentPage === 1" (click)="changePage(currentPage - 1)">
-          <a class="page-link text-prev"><i class="fas fa-chevron-left chevron-personalized"></i> Prev</a>
-        </li>
-        <li class="page-item" *ngFor="let page of totalPagesArray" (click)="changePage(page)">
-          <a class="page-link">
-            <span [class.active]="currentPage === page" class="page-indicator"></span>
-          </a>
-        </li>
-        <li class="page-item" [class.disabled]="currentPage === totalPages" (click)="changePage(currentPage + 1)">
-          <a class="page-link text-next">Next <i class="fas fa-chevron-right chevron-personalized"></i></a>
-        </li>
-      </ul>
-    </nav>
+    <app-pagination 
+      [currentPage]="cardFourColumnsBlogPaginated.currentPage" 
+      [totalPages]="cardFourColumnsBlogPaginated.totalPages" 
+      (pageChanged)="onPageChangedCards($event, cardFourColumnsBlogPaginated)">
+    </app-pagination>    
     <br>
     <br>
     <h1 class="text-center text-white">4.7 million traders <span class="h1-personalized">who trust us!</span></h1>
@@ -186,6 +180,42 @@
         <h1 class="text-center text-white">22,731</h1>
       </div>
     </div>
+    <br>
+    <br>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button class="btn-primary me-md-2 btn-lg btn-start-trading" type="button">Start Trading with Trad X &nbsp;<i class="fas fa-chevron-right"></i></button>
+    </div>
+    <h1 class="text-center text-white h1-txt-lead">
+      <span class="txt-personalized-trad">Trad</span>
+      <span class="txt-personalized-x">x</span>
+      Ecosystem, partners & Community
+    </h1>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized active" aria-pressed="true">Our Ecosystem</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Our Partners</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Our Community</button>
+    </div>
+  </div>  
+  <br><br>
+  <div class="container div-lead">
+    <div class="row row-cols-1 row-cols-md-4 g-6 div-card" [id]="'cardContainer' + 2">
+      <div *ngFor="let item of cardFourColumnsPaginated.paginatedCards" class="col">
+        <app-card
+          [title]="item.title"  
+          [text]="item.text" 
+          [links]="item.links"
+          [cardClass]="item.cardClass"
+          [titleClass]="item.title"
+          [textClass]="item.textClass"
+          [cardStyle]="item.cardStyle"
+          [textStyle]="item.textStyle">
+        </app-card>        
+      </div>      
+    </div>
+    <app-pagination 
+        [currentPage]="cardFourColumnsPaginated.currentPage" 
+        [totalPages]="cardFourColumnsPaginated.totalPages" 
+        (pageChanged)="onPageChangedCards($event, cardFourColumnsPaginated)">
+      </app-pagination>
   </div>
-  
 </section>

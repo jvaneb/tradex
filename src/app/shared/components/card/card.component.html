@@ -1,13 +1,13 @@
-<div class="card card-personalized">
+<div class="card" [ngClass]="cardClass" [ngStyle]="cardStyle">
     <div class="card-body">
-        <h5 class="card-title-personalized">{{ title }} <img src="../../../../assets/img/img-card.png" class="img-fluid img-card-personalized" alt=""></h5>
-        <ul>
-            <li>
-                <p class="txt">{{ text }}</p>
-            </li>
-        </ul>        
-        <ng-container *ngFor="let link of links">
-            <a [href]="link.href" class="text-white link">{{ link.text }}</a>&nbsp;<i class="fas fa-chevron-down chevron-personalized"></i>
-        </ng-container>
+      <h5 class="card-title-personalized">{{ title }} <img src="../../../../assets/img/img-card.png" class="img-fluid img-card-personalized" alt=""></h5>
+      <ul>
+        <li>
+            <p class="txt" [ngClass]="textClass" [ngStyle]="textStyle">{{ text }}</p>
+        </li>
+    </ul>
+      <ng-container *ngFor="let link of links">
+        <a [href]="link.href" class="text-white link">{{ link.text }}</a>&nbsp;<i class="fas fa-chevron-down chevron-personalized"></i>
+      </ng-container>
     </div>
-</div> 
+</div>

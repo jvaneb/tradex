@@ -1,0 +1,52 @@
+.chevron-personalized {
+    color: #ff1802;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.page-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+span.page-indicator.active {
+    margin: 0px 3px;
+}
+  
+.page-indicator.active {
+    background: #ffffff;
+    border: 1px solid #ff1802;
+}
+  
+[id^="cardContainer"] {
+    position: relative;
+  }
+.card-enter-active, .card-leave-active {
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.card-enter, .card-leave-to /* .card-leave-active en <2.1.8 */ {
+    opacity: 0;
+}
+
+a.text-prev, a.text-next {
+    line-height: 5em !important;
+}
+
+a.page-link {
+    padding: 0%;
+}
+
+.page-link {
+    background-color: transparent;
+    text-transform: capitalize;
+    text-decoration: underline !important;
+}
+
+.page-link:hover {
+    background-color: transparent !important;
+}

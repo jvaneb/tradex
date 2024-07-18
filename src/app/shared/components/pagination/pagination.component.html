@@ -1,0 +1,15 @@
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 1" (click)="changePage(currentPage - 1)">
+        <a class="page-link text-prev"><i class="fas fa-chevron-left chevron-personalized"></i> Prev</a>
+      </li>
+      <li class="page-item" *ngFor="let page of totalPagesArray" (click)="changePage(page)">
+        <a class="page-link">
+          <span [class.active]="currentPage === page" class="page-indicator"></span>
+        </a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages" (click)="changePage(currentPage + 1)">
+        <a class="page-link text-next">Next <i class="fas fa-chevron-right chevron-personalized"></i></a>
+      </li>
+    </ul>
+</nav>
