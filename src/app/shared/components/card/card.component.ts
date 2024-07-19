@@ -11,7 +11,8 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
   @Input() title: string = '';
   @Input() subtitle: string = '';
-  @Input() text: string = '';
+  @Input() text: string[] = [];
+  @Input() img: string = '';
   @Input() links: { text: string, href: string }[] = [];
   @Input() cardClass: string = '';
   @Input() titleClass: string = '';
@@ -23,14 +24,12 @@ export class CardComponent {
   constructor() {
     this.cardStyle = this.cardStyle || {};
     this.titleStyle = this.titleStyle || {};
-    // this.subtitleStyle = this.subtitleStyle || {};
     this.textStyle = this.textStyle || {};
   }
 
   ngOnChanges() {
     this.cardStyle = this.cardStyle || {};
     this.titleStyle = this.titleStyle || {};
-    // this.subtitleStyle = this.subtitleStyle || {};
     this.textStyle = this.textStyle || {};
   }
 }

@@ -5,7 +5,7 @@ export interface Link {
 
 export interface Card {
   title: string;
-  text: string;
+  text: string[];
   links: Link[];
   cardClass: string;
   textClass: string;

@@ -1,8 +1,9 @@
 <div class="page-header">
   <div class="content-center">
+    <!-- <app-breadcrumb></app-breadcrumb> -->
     <div class="row row-grid justify-content-between align-items-center text-left">
       <div class="col-lg-12 col-md-12">
-        <p class="text-white text-center h0">Be The Master With Us</p>
+        <p class="text-center h0">Be The Master With Us</p>
         <h1 class="text-white text-center">Achieve, Trading Excellence</h1>
         <h3 class="text-white text-center txt-h3-crypto">Crypto, forex, and commodities. No sign up required.</h3>
         
@@ -55,6 +56,7 @@
           [title]="card.title"  
           [text]="card.text" 
           [links]="card.links"
+          [img]="card.img"
           [cardClass]="card.cardClass"
           [textClass]="card.textClass"
           [cardStyle]="card.cardStyle"
@@ -70,7 +72,7 @@
 </div>
 <section class="section section-lg ">
   <div class="container div-lead">
-    <div class="row">
+    <div class="row row-markets-personalized">
       <div class="col">
         <h2 class="h2-personalized-regular text-center text-white">Forex</h2>
         <img src="../../assets/img/forex.png" class="img-fluid img-forex mx-auto d-block" alt="">
@@ -143,9 +145,9 @@
   <br>
     <h1 class="text-center text-white h1-personalized">Latest financial news & insights around the world.</h1>
 
-    <div class="row row-cols-1 row-cols-md-4 g-5" id="cardContainer1">
+    <div class="row row-cols-1 row-cols-md-4 g-5" id="cardContainer">
       <div class="col" *ngFor="let blog of cardFourColumnsBlogPaginated.paginatedCards">
-        <div class="card card-personalized" style="width: 18rem;">
+        <div class="card card-personalized">
           <img src="{{blog.img}}" class="card-img-top rounded img-test-blog" alt="...">
           <h5 class="h5-text-personalized">{{ blog.date | date : 'fullDate' }}</h5>
           <div class="card-body card-body-personalized">
@@ -158,7 +160,7 @@
       [currentPage]="cardFourColumnsBlogPaginated.currentPage" 
       [totalPages]="cardFourColumnsBlogPaginated.totalPages" 
       (pageChanged)="onPageChangedCards($event, cardFourColumnsBlogPaginated)">
-    </app-pagination>    
+    </app-pagination>
     <br>
     <br>
     <h1 class="text-center text-white">4.7 million traders <span class="h1-personalized">who trust us!</span></h1>
@@ -198,12 +200,13 @@
   </div>  
   <br><br>
   <div class="container div-lead">
-    <div class="row row-cols-1 row-cols-md-4 g-6 div-card" [id]="'cardContainer' + 2">
+    <div class="row row-cols-1 row-cols-md-4 g-6 div-card">
       <div *ngFor="let item of cardFourColumnsPaginated.paginatedCards" class="col">
         <app-card
           [title]="item.title"  
           [text]="item.text" 
           [links]="item.links"
+          [img]="item.img"
           [cardClass]="item.cardClass"
           [titleClass]="item.title"
           [textClass]="item.textClass"

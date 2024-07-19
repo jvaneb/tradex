@@ -23,7 +23,7 @@ h4 {
     font-weight: 300;
 }
 
-.btn-start-trading {
+/* .btn-start-trading {
     border-radius: 5px;
     border: 1px solid #ff1802;
     gap: 7px;
@@ -36,7 +36,7 @@ h4 {
 .btn-start-trading:hover {
     background: #0e1422 !important;
     transition: all 0.5s ease;
-}
+} */
 
 .btn-new-crypto, .btn-make-profits {
     border-radius: 5px;
@@ -71,11 +71,11 @@ h4 {
 
 .div-lead {
     background-color: #0E1422;
-    padding: 3em 4em 3em;
+    /* padding: 3em 4em 3em; */
 }
 
 .h1-txt-lead {
-    padding: 2% 0;
+    margin-bottom: 0;
 }
 
 .txt-personalized-trad {
@@ -104,14 +104,16 @@ h4 {
     float: right;
 }
 
-.div-card {
+/* .div-card {
     padding-bottom: 4%;
-}
+} */
 
 .h2-personalized-regular {
     font-weight: 400;
-    font-size: 18pt;
-    line-height: 36px;
+    /* font-size: 18pt;
+    line-height: 36px; */
+    font-size: 1.667vw;
+    line-height: 2.5vw;
 }
 
 .img-forex {
@@ -141,6 +143,10 @@ h4 {
 
 .card-personalized {
     background: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    /* height: 11rem; */
+    /* width: 18rem; */
 }
 
 .card-text-personalized {
@@ -167,52 +173,44 @@ h4 {
     box-shadow: 0px 0px 7px 0px #4988FF;
 }
 
-/* .page-indicator {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
+@media (min-width: 320px) and (max-width: 480px) {
+    /* .content-center {
+        top: 125vw !important;
+    }
+    .landing-page .page-header h1 {
+        margin-top: 0;
+    }
+    .h0 {
+        font-size: 7.75vw !important;
+        font-weight: 400;
+    }
+    .h1 {
+        font-size: 10.625vw;
+        font-weight: 400;
+    } */
 }
 
-span.page-indicator.active {
-    margin: 0px 3px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
 }
   
-.page-indicator.active {
-    background: #ffffff;
-    border: 1px solid #ff1802;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .example {background: green;}
 }
   
-#cardContainer {
-    position: relative;
-}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .example {background: blue;}
+} 
   
-.card-enter-active, .card-leave-active {
-    transition: opacity 0.5s ease-in-out;
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {background: orange;}
+} 
   
-.card-enter, .card-leave-to {
-    opacity: 0;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {background: pink !important;}
 }
-
-a.text-prev, a.text-next {
-    line-height: 5em !important;
-}
-
-a.page-link {
-    padding: 0%;
-}
-
-.page-link {
-    background-color: transparent;
-    text-transform: capitalize;
-    text-decoration: underline !important;
-}
-
-.page-link:hover {
-    background-color: transparent !important;
-} */
-  
-  

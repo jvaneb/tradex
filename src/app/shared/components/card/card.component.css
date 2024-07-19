@@ -2,7 +2,7 @@
     border: 1px solid #2853a5;
     background: #000000;
     /* width: 28rem; */
-    height: auto;
+    height: 190px;
     padding: 1%;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .img-card-personalized {
-    width: 7%;
+    width: 10%;
     float: right;
 }
 
@@ -29,8 +29,9 @@
     line-height: 24px;
     height: auto;
     text-align: left;
-    padding-top: 0.5rem;
+    padding-top: 0.3rem;
     width: 20rem;
+    margin: 0px;
 }
 
 .txt2 {
@@ -46,4 +47,8 @@
     font-size: 16px;
     line-height: 24px;
     text-align: left;
+}
+
+ul {
+    margin-bottom: 5%;
 }

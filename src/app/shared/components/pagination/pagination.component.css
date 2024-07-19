@@ -22,7 +22,7 @@ span.page-indicator.active {
     border: 1px solid #ff1802;
 }
   
-[id^="cardContainer"] {
+#cardContainer {
     position: relative;
   }
 .card-enter-active, .card-leave-active {
@@ -34,7 +34,7 @@ span.page-indicator.active {
 }
 
 a.text-prev, a.text-next {
-    line-height: 5em !important;
+    line-height: 6em !important;
 }
 
 a.page-link {

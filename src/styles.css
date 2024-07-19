@@ -10,3 +10,35 @@
     border-radius: 5px;
     gap: 7px;
 }
+.h0 {
+    color: #ff1802 !important;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 42.99px;
+}
+.btn-start-trading {
+    border-radius: 5px;
+    border: 1px solid #ff1802;
+    gap: 7px;
+    color: #ffffff;
+    background: #ff1802 !important;
+    font-size: 18px;
+    line-height: 20px;
+}
+.btn-start-trading:hover {
+    background: #0e1422 !important;
+    transition: all 0.5s ease;
+}
+.div-lead {
+    background-color: #0E1422;
+    /* padding: 2em 0; */
+}
+.div-card {
+    padding-bottom: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3.5%;
+}
+.row-markets-personalized {
+    padding: 4%;
+}

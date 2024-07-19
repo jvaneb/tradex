@@ -4,28 +4,23 @@ import { CarouselComponent } from '../shared/components/carousel/carousel.compon
 import { CardComponent } from '../shared/components/card/card.component';
 import { PaginationComponent } from '../shared/components/pagination/pagination.component';
 import { CardConfiguration } from '../shared/models/CardConfiguration.model';
+import { BreadcrumbComponent } from '../shared/components/breadcrumb/breadcrumb.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, CarouselComponent, CardComponent, PaginationComponent],
+  imports: [CommonModule, CarouselComponent, CardComponent, PaginationComponent, BreadcrumbComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{  
 
-  currentPage = 1;
-  itemsPerPage = 4;
-  paginatedBlogs: any = [];
-  totalPages: number = 0;
-  totalPagesArray: number[] = [];
-
   cardTwoColumns: CardConfiguration = {
     id: 1,
     cards: [
       {
-        title: 'Trade',
-        text: 'Trade over 130 crypto, Forex & Commodity',
+        title: 'Highly regulated & licensed',
+        text: ['Authorized and regulated by multintional globally leading regulatory bodies'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -34,8 +29,73 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: { 'width': 'auto' },
         date: new Date(),
-        img: ''
-      }
+        img: '../../../../assets/img/img-card.png'
+      },
+      {
+        title: 'No surprises',
+        text: ['Transparent pricing','Low spreads 300:1 leverage'],
+        links: [
+          { text: 'Learn More', href: '#' }
+        ],
+        cardClass: 'card-personalized',
+        textClass: 'txt',
+        textStyle: { 'width': 'auto', 'height': '60px' },
+        cardStyle: { 'width': 'auto' },
+        date: new Date(),
+        img: '../../../../assets/img/img-card.png'
+      },
+      {
+        title: '24/5 live customer support',
+        text: ['Our multilingual team is always ready to help you.'],
+        links: [
+          { text: 'Learn More', href: '#' }
+        ],
+        cardClass: 'card-personalized',
+        textClass: 'txt',
+        textStyle: { 'width': 'auto', 'height': '60px' },
+        cardStyle: { 'width': 'auto' },
+        date: new Date(),
+        img: '../../../../assets/img/img-card.png'
+      },
+      {
+        title: 'Instant deposit & withdrawal',
+        text: ['No Deposit or Withdrawal Fees Some banks or payment providers '],
+        links: [
+          { text: 'Learn More', href: '#' }
+        ],
+        cardClass: 'card-personalized',
+        textClass: 'txt',
+        textStyle: { 'width': 'auto', 'height': '60px' },
+        cardStyle: { 'width': 'auto' },
+        date: new Date(),
+        img: '../../../../assets/img/img-card.png'
+      },
+      {
+        title: 'End-to-end security',
+        text: ['100% data encryption protection. Segregated from the Companys funds.'],
+        links: [
+          { text: 'Learn More', href: '#' }
+        ],
+        cardClass: 'card-personalized',
+        textClass: 'txt',
+        textStyle: { 'width': 'auto', 'height': '60px' },
+        cardStyle: { 'width': 'auto' },
+        date: new Date(),
+        img: '../../../../assets/img/img-card.png'
+      },
+      {
+        title: 'Unparallel trading conditions',
+        text: ['Transparent trading with Depth of Market (DoM) on MT5.'],
+        links: [
+          { text: 'Learn More', href: '#' }
+        ],
+        cardClass: 'card-personalized',
+        textClass: 'txt',
+        textStyle: { 'width': 'auto', 'height': '60px' },
+        cardStyle: { 'width': 'auto' },
+        date: new Date(),
+        img: '../../../../assets/img/img-card.png'
+      },
     ],
     currentPage: 1,
     itemsPerPage: 4,
@@ -48,7 +108,7 @@ export class HomeComponent implements OnInit{
     cards: [
       {
         title: '',
-        text: 'Trade over 130 crypto, Forex & Commodity 1',
+        text: ['Is there a correlation between bitcoin and the financial markets? 1'],
         links: [],
         cardClass: '',
         textClass: '',
@@ -59,7 +119,62 @@ export class HomeComponent implements OnInit{
       },
       {
         title: '',
-        text: 'Trade over 130 crypto, Forex & Commodity 2',
+        text: ['Is there a correlation between bitcoin and the financial markets? 2'],
+        links: [],
+        cardClass: '',
+        textClass: '',
+        textStyle: {},
+        cardStyle: {},
+        date: new Date(),
+        img: '../../assets/img/img3-blog.png'
+      },
+      {
+        title: '',
+        text: ['Is there a correlation between bitcoin and the financial markets? 3'],
+        links: [],
+        cardClass: '',
+        textClass: '',
+        textStyle: {},
+        cardStyle: {},
+        date: new Date(),
+        img: '../../assets/img/img1-blog.png'
+      },
+      {
+        title: '',
+        text: ['Is there a correlation between bitcoin and the financial markets? 4'],
+        links: [],
+        cardClass: '',
+        textClass: '',
+        textStyle: {},
+        cardStyle: {},
+        date: new Date(),
+        img: '../../assets/img/img4-blog.png'
+      },
+      {
+        title: '',
+        text: ['Is there a correlation between bitcoin and the financial markets? 5'],
+        links: [],
+        cardClass: '',
+        textClass: '',
+        textStyle: {},
+        cardStyle: {},
+        date: new Date(),
+        img: '../../assets/img/img3-blog.png'
+      },
+      {
+        title: '',
+        text: ['Is there a correlation between bitcoin and the financial markets? 6'],
+        links: [],
+        cardClass: '',
+        textClass: '',
+        textStyle: {},
+        cardStyle: {},
+        date: new Date(),
+        img: '../../assets/img/img1-blog.png'
+      },
+      {
+        title: '',
+        text: ['Is there a correlation between bitcoin and the financial markets? 7'],
         links: [],
         cardClass: '',
         textClass: '',
@@ -70,69 +185,14 @@ export class HomeComponent implements OnInit{
       },
       {
         title: '',
-        text: 'Trade over 130 crypto, Forex & Commodity 3',
+        text: ['Is there a correlation between bitcoin and the financial markets? 8'],
         links: [],
         cardClass: '',
         textClass: '',
         textStyle: {},
         cardStyle: {},
         date: new Date(),
-        img: '../../assets/img/img2-blog.png'
-      },
-      {
-        title: '',
-        text: 'Trade over 130 crypto, Forex & Commodity 4',
-        links: [],
-        cardClass: '',
-        textClass: '',
-        textStyle: {},
-        cardStyle: {},
-        date: new Date(),
-        img: '../../assets/img/img2-blog.png'
-      },
-      {
-        title: '',
-        text: 'Trade over 130 crypto, Forex & Commodity 5',
-        links: [],
-        cardClass: '',
-        textClass: '',
-        textStyle: {},
-        cardStyle: {},
-        date: new Date(),
-        img: '../../assets/img/img2-blog.png'
-      },
-      {
-        title: '',
-        text: 'Trade over 130 crypto, Forex & Commodity 6',
-        links: [],
-        cardClass: '',
-        textClass: '',
-        textStyle: {},
-        cardStyle: {},
-        date: new Date(),
-        img: '../../assets/img/img2-blog.png'
-      },
-      {
-        title: '',
-        text: 'Trade over 130 crypto, Forex & Commodity 7',
-        links: [],
-        cardClass: '',
-        textClass: '',
-        textStyle: {},
-        cardStyle: {},
-        date: new Date(),
-        img: '../../assets/img/img2-blog.png'
-      },
-      {
-        title: '',
-        text: 'Trade over 130 crypto, Forex & Commodity 8',
-        links: [],
-        cardClass: '',
-        textClass: '',
-        textStyle: {},
-        cardStyle: {},
-        date: new Date(),
-        img: '../../assets/img/img2-blog.png'
+        img: '../../assets/img/img4-blog.png'
       }
     ],
     currentPage: 1,
@@ -146,7 +206,7 @@ export class HomeComponent implements OnInit{
     cards: [
       {
         title: 'Trade 1',
-        text: 'Trade over 130 crypto,  Forex & Commodity 1',
+        text: ['Trade over 130 crypto,  Forex & Commodity 1'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -155,11 +215,11 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: {},
         date: new Date(),
-        img: ''
+        img: '../../../../assets/img/img-card.png'
       },
       {
         title: 'Stake 2',
-        text: 'Take $GNS and earn real yeild 2',
+        text: ['Take $GNS and earn real yeild 2'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -168,11 +228,11 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: {},
         date: new Date(),
-        img: ''
+        img: '../../../../assets/img/img-card.png'
       },
       {
         title: 'Vault 3',
-        text: 'Lend $DAI, $USDC or $WETH & earn real yeild 3',
+        text: ['Lend $DAI, $USDC or $WETH & earn real yeild 3'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -181,11 +241,11 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: {},
         date: new Date(),
-        img: ''
+        img: '../../../../assets/img/img-card.png'
       },
       {
         title: 'Crypto 4',
-        text: 'Step by step on ramp 4',
+        text: ['Step by step on ramp 4'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -194,11 +254,11 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: {},
         date: new Date(),
-        img: ''
+        img: '../../../../assets/img/img-card.png'
       },
       {
         title: 'Trade 5',
-        text: 'Trade over 130 crypto,  Forex & Commodity 5',
+        text: ['Trade over 130 crypto,  Forex & Commodity 5'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -207,11 +267,11 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: {},
         date: new Date(),
-        img: ''
+        img: '../../../../assets/img/img-card.png'
       },
       {
         title: 'Stake 6',
-        text: 'Take $GNS and earn real yeild 6',
+        text: ['Take $GNS and earn real yeild 6'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -220,11 +280,11 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: {},
         date: new Date(),
-        img: ''
+        img: '../../../../assets/img/img-card.png'
       },
       {
         title: 'Vault 7',
-        text: 'Lend $DAI, $USDC or $WETH & earn real yeild 7',
+        text: ['Lend $DAI, $USDC or $WETH & earn real yeild 7'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -233,11 +293,11 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: {},
         date: new Date(),
-        img: ''
+        img: '../../../../assets/img/img-card.png'
       },
       {
         title: 'Crypto 8',
-        text: 'Step by step on ramp 8',
+        text: ['Step by step on ramp 8'],
         links: [
           { text: 'Learn More', href: '#' }
         ],
@@ -246,7 +306,7 @@ export class HomeComponent implements OnInit{
         textStyle: { 'width': 'auto', 'height': '60px' },
         cardStyle: {},
         date: new Date(),
-        img: ''
+        img: '../../../../assets/img/img-card.png'
       }
     ],
     currentPage: 1,
