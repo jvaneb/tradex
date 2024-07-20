@@ -42,3 +42,8 @@
 .row-markets-personalized {
     padding: 4%;
 }
+.h1-personalized {
+    color: #ff1802;
+    font-weight: 500;
+    text-transform: capitalize;
+}

@@ -126,6 +126,83 @@ export class MarketsComponent {
     totalPages: 0
   };
 
+  table = {
+    data: [
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-blue.png'
+
+      },
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-blue.png'
+
+      },
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-red.png'
+
+      },
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-blue.png'
+
+      },
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-blue.png'
+
+      },
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-red.png'
+
+      },
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-blue.png'
+
+      },
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-blue.png'
+
+      },
+      {
+        assest: 'EUR/TRY',
+        sell: '33.64934',
+        buy: '33.72342',
+        change: '0.07 %',
+        img: '../../../../assets/img/img-mini-chart-red.png'
+
+      },
+    ]
+  }
+
   ngOnInit() {
     this.updateTotalPagesPagination(this.cardFourColumnsPaginated);    
   }

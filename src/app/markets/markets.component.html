@@ -22,8 +22,9 @@
         <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Top Gainers</button>
         <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Losing Down</button>
     </div>
-<br>
-    <div class="container div-lead">
+    <br>
+    <!-- Div cards discover forex-->
+    <div class="container-fluid div-lead">
         <div class="row row-cols-1 row-cols-md-4 g-6 div-card">
             <div *ngFor="let item of cardFourColumnsPaginated.paginatedCards" class="col">
               <app-card
@@ -44,5 +45,89 @@
             [totalPages]="cardFourColumnsPaginated.totalPages" 
             (pageChanged)="onPageChangedCards($event, cardFourColumnsPaginated)">
         </app-pagination>
+    </div>
+    <br><br>
+    <!-- Div tables -->
+    <div class="container-fluid div-lead" style="padding: 2% 6% 2% 6%;" id="tables">
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                        <th scope="col"></th>
+                        <th scope="col" sortable="assest">Assest</th>
+                        <th scope="col" sortable="sell">Sell</th>
+                        <th scope="col" sortable="buy">Buy</th>
+                        <th scope="col" sortable="change">Change (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let dataTable of table.data">
+                            <td><div id="circulo"></div></td>
+                            <td>{{ dataTable.assest }}</td>
+                            <td>{{ dataTable.sell }}</td>
+                            <td>{{ dataTable.buy }}</td>
+                            <td colspan="2">
+                                {{ dataTable.change }}&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="{{dataTable.img}}" width="102" height="32" alt="" srcset=""> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-striped text-center" >
+                    <thead>
+                        <tr>
+                        <th scope="col"></th>
+                        <th scope="col" sortable="assest">Assest</th>
+                        <th scope="col" sortable="sell">Sell</th>
+                        <th scope="col" sortable="buy">Buy</th>
+                        <th scope="col" sortable="change">Change (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let dataTable of table.data">
+                            <td><div id="circulo"></div></td>
+                            <td>{{ dataTable.assest }}</td>
+                            <td>{{ dataTable.sell }}</td>
+                            <td>{{ dataTable.buy }}</td>
+                            <td colspan="2">
+                                {{ dataTable.change }}&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="{{dataTable.img}}" width="102" height="32" alt="" srcset=""> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a href="#">View full CFDs List</a>
+    </div>
+    <br><br>
+    <!-- Div info -->
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center text-white h1-personalized">what are currency pairs</h1><br><br><br>
+            <div class="col-md-8 offset-md-2">
+                <h3 class="text-md-center text-white fw-normal">
+                    Currency pairs are financial instruments where one currency is quoted against another currency.  
+                    The quote indicates the amount you would pay in one currency for the other.
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-white text-capitalize">Here's a simplified example:</h1>
+                <h3 class="text-white fw-normal">The currency pair GBP/USD is at 1.15. You can exchange 1 GBP for 1.15 USD.</h3>
+                <h4 class="text-white fw-normal">
+                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.397727 17.5C0.397727 8.05468 8.05468 0.397727 17.5 0.397727C26.9453 0.397727 34.6023 8.05468 34.6023 17.5C34.6023 26.9453 26.9453 34.6023 17.5 34.6023C8.05468 34.6023 0.397727 26.9453 0.397727 17.5Z" fill="white" stroke="#5B93FF" stroke-width="0.795455"/>
+                        <path d="M9.54492 18.2948L13.7552 22.505C14.0658 22.8157 14.5695 22.8157 14.8801 22.505L25.454 11.9312" stroke="#155EFC" stroke-width="2.01923" stroke-linecap="round"/>
+                    </svg>
+                    If GBP/USD started the day at 1.15, and by the end of the day rose to 1.16, it's because the Sterling has strengthened against the Dollar.
+                </h4>                    
+            </div>
+            <div class="col-md-6"></div>
+        </div>
     </div>
 </section>

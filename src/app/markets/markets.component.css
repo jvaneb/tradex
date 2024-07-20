@@ -5,3 +5,27 @@
 .d-grid-personalized {
     padding-top: 5%;
 }
+.table-striped>thead>tr>th {
+    background-color: transparent;
+    text-transform: capitalize;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #010203;
+}
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+    background-color: #0D1936;
+}
+#circulo{
+    height:20px;
+    width:20px;
+    background:#000000;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    border-style: dotted;
+    border-color: #848484;
+    border-width: 1.5px;
+    float: right;
+ }
