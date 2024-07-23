@@ -12,6 +12,7 @@ import { PaginationComponent } from '../shared/components/pagination/pagination.
   styleUrl: './markets.component.css'
 })
 export class MarketsComponent {
+  
   cardFourColumnsPaginated: CardConfiguration = {
     id: 1,
     cards: [
@@ -203,8 +204,175 @@ export class MarketsComponent {
     ]
   }
 
+  currencyPagination: CardConfiguration = {
+    id: 1,
+    cards: [
+      {
+        title: 'AUD/USD 1',
+        text: ['0.6'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'USD/JPY 2',
+        text: ['0.7'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'EUR/USD 3',
+        text: ['0.6'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'GBP/USD 4',
+        text: ['0.9'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'AUD/USD 5',
+        text: ['0.6'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'USD/JPY 6',
+        text: ['0.7'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'EUR/USD 7',
+        text: ['0.6'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'GBP/USD 8',
+        text: ['0.9'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },   
+      {
+        title: 'GBP/USD 9',
+        text: ['0.9'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'AUD/USD 10',
+        text: ['0.6'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'USD/JPY 11',
+        text: ['0.7'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      },
+      {
+        title: 'EUR/USD 12',
+        text: ['0.6'],
+        links: [
+          { text: '', href: '' }
+        ],
+        cardClass: '',
+        textClass: '',
+        textStyle: { },
+        cardStyle: {},
+        date: new Date(),
+        img: '../../../../assets/img/eur-usd.png'
+      }   
+    ],
+    currentPage: 1,
+    itemsPerPage: 6,
+    paginatedCards: [],
+    totalPages: 0
+  }
+
   ngOnInit() {
     this.updateTotalPagesPagination(this.cardFourColumnsPaginated);    
+    this.updateTotalPagesPagination(this.currencyPagination);  
   }
 
   updateTotalPagesPagination(cardConfiguration: CardConfiguration){
@@ -221,5 +389,9 @@ export class MarketsComponent {
   onPageChangedCards(page: number, cardConfiguration: CardConfiguration) {
     cardConfiguration.currentPage = page;
     this.updatePaginatedCards(cardConfiguration);
+  }
+
+  prueba() {
+    alert('entro')
   }
 }

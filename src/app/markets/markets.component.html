@@ -48,9 +48,9 @@
     </div>
     <br><br>
     <!-- Div tables -->
-    <div class="container-fluid div-lead" style="padding: 2% 6% 2% 6%;" id="tables">
+    <div class="container-fluid div-lead" style="padding: 2% 8% 2% 8%;" id="tables">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 table-responsive">
                 <table class="table table-striped text-center">
                     <thead>
                         <tr>
@@ -75,7 +75,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 table-responsive">
                 <table class="table table-striped text-center" >
                     <thead>
                         <tr>
@@ -115,19 +115,149 @@
                 </h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row"  style="margin-top: 4%;">
+            <div class="clearfix">
                 <h1 class="text-white text-capitalize">Here's a simplified example:</h1>
                 <h3 class="text-white fw-normal">The currency pair GBP/USD is at 1.15. You can exchange 1 GBP for 1.15 USD.</h3>
-                <h4 class="text-white fw-normal">
-                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.397727 17.5C0.397727 8.05468 8.05468 0.397727 17.5 0.397727C26.9453 0.397727 34.6023 8.05468 34.6023 17.5C34.6023 26.9453 26.9453 34.6023 17.5 34.6023C8.05468 34.6023 0.397727 26.9453 0.397727 17.5Z" fill="white" stroke="#5B93FF" stroke-width="0.795455"/>
-                        <path d="M9.54492 18.2948L13.7552 22.505C14.0658 22.8157 14.5695 22.8157 14.8801 22.505L25.454 11.9312" stroke="#155EFC" stroke-width="2.01923" stroke-linecap="round"/>
-                    </svg>
-                    If GBP/USD started the day at 1.15, and by the end of the day rose to 1.16, it's because the Sterling has strengthened against the Dollar.
-                </h4>                    
+                <ul>
+                    <li class="li-personalized">
+                        <h4 class="text-white fw-normal txt-h4-personalized" style="width: 50%; display: inline-block;">
+                            If GBP/USD started the day at 1.15, and by the end of the day rose to 1.16, it's because the Sterling has strengthened against the Dollar.
+                        </h4>
+                        <img src="../../assets/img/map-gbp-usd-positive.png" width="350" class="img-fluid img-personalized-size" style="vertical-align: middle;float: right;"  alt="" srcset="">
+                    </li>
+                    <li class="li-personalized">
+                        <h4 class="text-white fw-normal txt-h4-personalized" style="width: 50%; display: inline-block;">
+                            If GBP/USD started the day at 1.15, then drops 1.13, it's because the Sterling has weakened against the Dollar.
+                        </h4>
+                        <img src="../../assets/img/map-gbp-usd-negative.png" class="img-fluid img-personalized-size" style="vertical-align: middle;float: right;"  alt="" srcset="">
+                    </li>
+                </ul>    
             </div>
-            <div class="col-md-6"></div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../../assets/img/map-gbp-usd-positive2.png" class="img-fluid " style="vertical-align: center;" alt="" srcset="">
+            </div>
+            <div class="col-md-6" style="display: inline-block;">
+                <h1 class="text-white text-capitalize">Why Trade Forex CFDs with Trad X</h1>
+                <ul>
+                    <li class="li-personalized">
+                        <h4 class="text-white fw-normal txt-h4-personalized">
+                            Competitive spreads from 0.6 pips on EUR/USD
+                        </h4> 
+                    </li>
+                    <li class="li-personalized">
+                        <h4 class="text-white fw-normal txt-h4-personalized">
+                            Powerful charting tools integral to the markets.com intuitive platform
+                        </h4>
+                    </li>
+                    <li class="li-personalized">
+                        <h4 class="text-white fw-normal txt-h4-personalized">
+                            You can trade Forex 24/5
+                        </h4>
+                    </li>
+                    <li class="li-personalized">
+                        <h4 class="text-white fw-normal txt-h4-personalized">
+                            Currency pairing CFDs enables trade at a fraction of the trade's total value
+                        </h4>
+                    </li>
+                    <li class="li-personalized">
+                        <h4 class="text-white fw-normal txt-h4-personalized">
+                            Trade on margin and go long or shortPowerful charting tools integral to the markets.com intuitive platform
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</section>
+<section class="section section-lg ">
+    <h1 class="text-center text-capitalize text-white">Our most traded Forex pairs with the lowest spreads</h1>
+    <div class="container-fluid div-lead">
+        <div class="row " style="padding: 2% 8% 0% 8%;">
+            <div class="col" *ngFor="let dataCurrency of currencyPagination.paginatedCards">
+                <h2 class="h2-personalized-regular text-center text-white">{{ dataCurrency.title }}</h2>
+                <img src="{{dataCurrency.img}}" class="img-fluid img-forex mx-auto d-block" alt="">
+                <h1 class="text-center text-capitalize text-white">{{ dataCurrency.text }}</h1>
+            </div>
+        </div>
+        <app-pagination 
+            [currentPage]="currencyPagination.currentPage" 
+            [totalPages]="currencyPagination.totalPages" 
+            (pageChanged)="onPageChangedCards($event, currencyPagination)">
+        </app-pagination>
+    </div>
+    <br>
+    <p class="text-center text-white">*Spreads are variable and may be as low as displayed above</p>
+
+    <div class="container-fluid div-lead">
+        <h1 class="text-center text-white">CFD Trading Calculator</h1>
+        <div class="row" style="padding: 2% 8% 0% 8%;">
+            <div class="col-md-6">
+                <h3 class="text-white">Choose your points of movement</h3>
+                <h6 class="text-white" style="width: 80%; size: 12px;line-height: 25px;font-weight: 400; text-transform: none;">
+                    Calculate your hypothetical P/L (aggregated cost and charges) if you had opened a trade today.
+                </h6>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-5 cols-form-personalized">
+                            <label for="inputMarket" class="form-label text text-white">Market</label>
+                            <select id="inputMarket" class="form-select select-personalized">
+                              <option>-- Select --</option>
+                              <option value="1" selected>Shares</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5 cols-form-personalized">
+                            <label for="inputInstrument" class="form-label text-white">Instrument</label>
+                            <select id="inputInstrument" class="form-select select-personalized">
+                              <option>-- Select --</option>
+                              <option value="1" selected>Apple</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-5 cols-form-personalized">
+                            <label for="inputDirection" class="form-label text text-white">Direction</label>
+                            <select id="inputDirection" class="form-select select-personalized chevron">
+                              <option>-- Select --</option>
+                              <option value="1" selected>Sell</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5 cols-form-personalized">
+                            <label for="inputDirection2" class="form-label text-white"><br></label>
+                            <select id="inputDirection2" class="form-select select-personalized chevron">
+                              <option>-- Select --</option>
+                              <option value="1" selected>Buy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-5 cols-form-personalized">
+                            <label for="inputQuantity" class="form-label text text-white">Quantity</label>
+                            <select id="inputQuantity" class="form-select select-personalized">
+                              <option>-- Select --</option>
+                              <option value="1" selected>Shares</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5 cols-form-personalized">
+                            <label for="" class="form-label text text-white"><br></label>
+                            <input type="button" value="Calculate" class="text-left btn-new-crypto form-select select-personalized chevron">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 bg-black">
+                <div class="col bg-primary">
+                    <span class="text-white">Value</span>
+                    <div class="input-group mb-3" style="width: 18rem;">                    
+                        <span class="input-group-text">$</span>
+                        <input type="text" placeholder="-" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 </section>

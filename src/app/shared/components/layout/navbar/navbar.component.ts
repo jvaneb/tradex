@@ -1,10 +1,11 @@
 import { Component, AfterViewInit, HostListener  } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import * as bootstrap from 'bootstrap';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

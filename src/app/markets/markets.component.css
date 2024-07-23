@@ -29,3 +29,29 @@
     border-width: 1.5px;
     float: right;
  }
+
+.txt-h4-personalized {
+    font-size: 1.25vw;
+    line-height: 32px;
+}
+.li-personalized {
+    line-height: 32px;
+    list-style-image: url('../../assets/img/check-li-origin2.png') ;
+    padding-left: 2%;
+}
+
+.img-personalized-size {
+    width: 30%;
+}
+.select-personalized {
+    height: 50px;
+    border: 1px solid #2853a5;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: calc(.5vw + 1.25vh);
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FF1802' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+.chevron {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 16' fill='none' %3e%3cpath d='M1.49684 14.3323L8.10547 7.72363L1.49684 1.11501' stroke='%23FF1802' stroke-width='1.91489' stroke-linecap='round' /%3e%3c/svg%3e")
+}
+

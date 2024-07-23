@@ -25,6 +25,19 @@
     font-size: 18px;
     line-height: 20px;
 }
+.btn-new-crypto, .btn-make-profits {
+    border-radius: 5px;
+    border: 1px solid #ff1802 !important;
+    gap: 7px;
+    background: #0e1422;
+    box-shadow: 0px -4px 14px 0px #EA36365E inset;
+    color: #ffffff;
+}
+
+.btn-new-crypto:hover, .btn-make-profits:hover{
+    background: #ff1802 !important;
+    transition: all 0.5s ease;
+}
 .btn-start-trading:hover {
     background: #0e1422 !important;
     transition: all 0.5s ease;
@@ -46,4 +59,31 @@
     color: #ff1802;
     font-weight: 500;
     text-transform: capitalize;
+}
+.img-forex {
+    /* width: 35%; */
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.link {
+    padding-top: 2em;
+    text-align: center;
+    font-weight: 400;
+    size: 16px;
+    line-height: 24px;
+}
+.h2-personalized-regular {
+    font-weight: 400;
+    /* font-size: 18pt;
+    line-height: 36px; */
+    font-size: 1.667vw;
+    line-height: 2.5vw;
+}
+.chevron-personalized {
+    color: #ff1802;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cols-form-personalized {
+    padding: 2% 2% 4% 2%
 }
