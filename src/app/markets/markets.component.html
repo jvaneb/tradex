@@ -48,7 +48,7 @@
     </div>
     <br><br>
     <!-- Div tables -->
-    <div class="container-fluid div-lead" style="padding: 2% 8% 2% 8%;" id="tables">
+    <div class="container-fluid div-lead" style="padding: 2% 6% 2% 6%;" id="tables">
         <div class="row">
             <div class="col-md-6 table-responsive">
                 <table class="table table-striped text-center">
@@ -176,7 +176,7 @@
 <section class="section section-lg ">
     <h1 class="text-center text-capitalize text-white">Our most traded Forex pairs with the lowest spreads</h1>
     <div class="container-fluid div-lead">
-        <div class="row " style="padding: 2% 8% 0% 8%;">
+        <div class="row " style="padding: 2%;">
             <div class="col" *ngFor="let dataCurrency of currencyPagination.paginatedCards">
                 <h2 class="h2-personalized-regular text-center text-white">{{ dataCurrency.title }}</h2>
                 <img src="{{dataCurrency.img}}" class="img-fluid img-forex mx-auto d-block" alt="">
@@ -193,8 +193,9 @@
     <p class="text-center text-white">*Spreads are variable and may be as low as displayed above</p>
 
     <div class="container-fluid div-lead">
+        <br>
         <h1 class="text-center text-white">CFD Trading Calculator</h1>
-        <div class="row" style="padding: 2% 8% 0% 8%;">
+        <div class="row" style="margin: 4%;">
             <div class="col-md-6">
                 <h3 class="text-white">Choose your points of movement</h3>
                 <h6 class="text-white" style="width: 80%; size: 12px;line-height: 25px;font-weight: 400; text-transform: none;">
@@ -248,15 +249,187 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-6 bg-black">
-                <div class="col bg-primary">
-                    <span class="text-white">Value</span>
-                    <div class="input-group mb-3" style="width: 18rem;">                    
-                        <span class="input-group-text">$</span>
-                        <input type="text" placeholder="-" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <div class="col bg-black" style="padding-bottom: 3%;">
+                <div class="row" style="margin:2% 0 1% 0;">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col offset-md-2">
+                        <select name="selectCurrencies" class="form-control form-select select-currencies-personalized">
+                            <option value="0">-- Choose --</option>
+                            <option value="1" selected>USD</option>
+                            <option value="2">USD</option>
+                            <option value="3">USD</option>
+                        </select>
+                    </div>
+                </div>                
+                <div class="row justify-content-md-center" style="margin:1% 4% 1% 4%;">                    
+                    <div class="col-md-4 bg-col-personalized">
+                        <span class="txt-span-calculator">Value</span>
+                        <div class="input-group mb-3">                    
+                            <span class="input-group-text text-white inp-group-personalized">$-</span>
+                            <input type="number" class="form-control text-white inp-group-personalized">
+                        </div>
+                    </div>
+                    <div class="col-md-4 bg-col-personalized">
+                        <span class="txt-span-calculator">Commission</span>
+                        <div class="input-group mb-3">                    
+                            <span class="input-group-text text-white inp-group-personalized">$-</span>
+                            <input type="number" class="form-control text-white inp-group-personalized">
+                        </div>
+                    </div>
+                    <div class="col-md-4 bg-col-personalized">
+                        <span class="txt-span-calculator">Spread</span>
+                        <div class="input-group mb-3">                    
+                            <span class="input-group-text text-white inp-group-personalized">$-</span>
+                            <input type="number" class="form-control text-white inp-group-personalized">
+                        </div>
                     </div>
                 </div>
-                
+                <div class="row justify-content-md-center" style="margin:1% 4% 1% 4%;">
+                    <div class="col-md-3 bg-col-personalized ">
+                        <span class="txt-span-calculator">Leverage</span>
+                        <div class="input-group mb-3">                    
+                            <span class="input-group-text text-white inp-group-personalized">$-</span>
+                            <input type="number" class="form-control text-white inp-group-personalized">
+                        </div>
+                    </div>
+                    <div class="col-md-3 bg-col-personalized ">
+                        <span class="txt-span-calculator">Conversion Fee</span>
+                        <div class="input-group mb-3">                    
+                            <span class="input-group-text text-white inp-group-personalized">$-</span>
+                            <input type="number" class="form-control text-white inp-group-personalized">
+                        </div>
+                    </div>
+                    <div class="col-md-3 bg-col-personalized">
+                        <span class="txt-span-calculator">Required Margin</span>
+                        <div class="input-group mb-3">                    
+                            <span class="input-group-text text-white inp-group-personalized">$-</span>
+                            <input type="number" class="form-control text-white inp-group-personalized">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center" style="margin:1% 4% 1% 4%;">
+                    <div class="col-md-4 bg-col-personalized ">
+                        <span class="txt-span-calculator">Overnight Swaps</span>
+                        <div class="input-group mb-3">                    
+                            <span class="input-group-text text-white inp-group-personalized">$-</span>
+                            <input type="number" class="form-control text-white inp-group-personalized">
+                        </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row" style="margin:1% 4% 1% 4%;">
+                    <div class="col-md-4">
+                        <input type="button" value="Start Trading" class="text-left btn-new-crypto form-select select-personalized chevron">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="text-white">Past performance is not a reliable indicator of future results.</span>
+                    </div>
+                    <!-- <div class="col-md-3"></div> -->
+                </div>
+            </div>
+            <div class="col-md-12">
+                <span class="text-white">
+                    All positions on instruments denominated in a currency that is different from your account currency, <br> 
+                    will be subject to a conversion fee at the position exit as well.
+                </span>
+            </div>
+        </div>
+        <br>
+    </div>
+</section>
+<section class="section section-lg">
+    <div class="container">
+        <h1 class="text-center text-white text-capitalize">Join Trad X in 3 steps and <br> start trading</h1>
+
+        <div class="row">
+            <div class="col-md-4 justify-content-md-center">
+                <h2 class="text-center txt-h2-personalized-color">1. Create your account</h2>
+                <img src="../../assets/img/profile.png" class="mx-auto d-block img-fluid img-personalized" width="80" alt="" srcset="">
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-center txt-h2-personalized-color">2. Fund your account</h2>
+                <img src="../../assets/img/wallet.png" class="mx-auto d-block img-fluid img-personalized" width="80" alt="" srcset="">
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-center txt-h2-personalized-color">3. Start trading start away</h2><br>
+                <img src="../../assets/img/bar-chart.png" class="mx-auto d-block img-fluid img-personalized" width="80" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-lg">
+    <div class="container">
+        <h1 class="text-center text-white text-capitalized">Need more information?</h1>
+        <div class="row">
+            <div class="col-md-6 grid gap-0 column-gap-3">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-accordion-personalized" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Can I convert currencies using TradX.com
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Can I convert currencies using TradX.com
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Can I convert currencies using TradX.com
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 grid gap-0 column-gap-3">
+                <div class="accordion accordion-flush" id="accordionFlushExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Can I convert currencies using TradX.com
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Can I convert currencies using TradX.com
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Can I convert currencies using TradX.com
+                        </button>
+                      </h2>
+                      <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

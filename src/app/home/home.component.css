@@ -104,17 +104,11 @@ h4 {
     float: right;
 }
 
-/* .div-card {
-    padding-bottom: 4%;
-} */
-
-.h2-personalized-regular {
+/* .h2-personalized-regular {
     font-weight: 400;
-    /* font-size: 18pt;
-    line-height: 36px; */
-    font-size: 1.667vw;
-    line-height: 2.5vw;
-}
+    font-size: 24px;
+    line-height: 36px;
+} */
 
 .img-forex {
     width: 35%;
@@ -129,12 +123,12 @@ h4 {
     size: 16px;
     line-height: 24px;
 }
-.txt-h2-personalized-color {
+/* .txt-h2-personalized-color {
     background: linear-gradient(86.41deg, #FF0F06 -12.62%, #F67F10 105.32%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
-}
+} */
 
 
 .card-body-personalized{

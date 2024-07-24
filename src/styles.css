@@ -72,13 +72,6 @@
     size: 16px;
     line-height: 24px;
 }
-.h2-personalized-regular {
-    font-weight: 400;
-    /* font-size: 18pt;
-    line-height: 36px; */
-    font-size: 1.667vw;
-    line-height: 2.5vw;
-}
 .chevron-personalized {
     color: #ff1802;
     padding-left: 5px;
@@ -86,4 +79,16 @@
 }
 .cols-form-personalized {
     padding: 2% 2% 4% 2%
+}
+.txt-h2-personalized-color {
+    background: linear-gradient(86.41deg, #FF0F06 -12.62%, #F67F10 105.32%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-size: 24px;
+}
+.h2-personalized-regular {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
 }
