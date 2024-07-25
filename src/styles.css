@@ -16,6 +16,11 @@
     font-weight: 500;
     line-height: 42.99px;
 }
+.h4-regular-personalized {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+}
 .btn-start-trading {
     border-radius: 5px;
     border: 1px solid #ff1802;
@@ -91,4 +96,26 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
+}
+.bg-container-fluid-create-account {
+    background-color: #122655;
+}
+.col-form-create-account {
+    margin-top: .5rem !important;
+}
+.img-phone {
+    width: 527px; 
+    height: 629px;
+}
+.text-privacy-policy {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.checkbox-privacity-policy {
+    background-color: #000000 !important;
+    border: 1px solid #2853A5 !important;
+    visibility: visible;
+    opacity: 1;
 }

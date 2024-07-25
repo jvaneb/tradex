@@ -3,11 +3,12 @@ import { CardComponent } from '../shared/components/card/card.component';
 import { CommonModule } from '@angular/common';
 import { CardConfiguration } from '../shared/models/CardConfiguration.model';
 import { PaginationComponent } from '../shared/components/pagination/pagination.component';
+import { BreadcrumbComponent } from '../shared/components/breadcrumb/breadcrumb.component';
 
 @Component({
   selector: 'app-markets',
   standalone: true,
-  imports: [CommonModule, CardComponent, PaginationComponent],
+  imports: [CommonModule, CardComponent, PaginationComponent, BreadcrumbComponent],
   templateUrl: './markets.component.html',
   styleUrl: './markets.component.css'
 })
