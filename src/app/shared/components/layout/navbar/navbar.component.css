@@ -1,0 +1,10 @@
+.navbar-fixed-top {
+    transition: background-color 0.5s ease;
+  }
+  
+  .navbar-fixed-top.scrolled {
+    background-color: #0e1422;
+  }
+  .navbar-fixed-top.transparent {
+    background-color: transparent;
+  }

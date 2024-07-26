@@ -1,0 +1,224 @@
+<div class="page-header">
+  <div class="content-center">
+    <!-- <app-breadcrumb></app-breadcrumb> -->
+    <div class="row row-grid justify-content-between align-items-center text-left">
+      <div class="col-lg-12 col-md-12">
+        <p class="text-center h0">Be The Master With Us</p>
+        <h1 class="text-white text-center">Achieve, Trading Excellence</h1>
+        <h3 class="text-white text-center txt-h3-crypto">Crypto, forex, and commodities. No sign up required.</h3>
+        
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <button class="btn-primary me-md-2 btn-lg btn-start-trading" type="button">Start Trading &nbsp;<i class="fas fa-chevron-right"></i></button>
+          <button class="btn-primary btn-lg btn-new-crypto" type="button">New to Crypto &nbsp;<i class="fas fa-chevron-right chevron-personalized"></i></button>
+        </div>
+      </div>        
+    </div>      
+  </div>
+</div>
+
+<div class="img-chart">
+  <img src="../../assets/img/backgroung-chart3.png" class="img-fluid">
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <button class="btn-primary btn-lg btn-make-profits" type="button">Learn to Make Profits &nbsp;<i class="fas fa-chevron-right chevron-personalized"></i></button>      
+  </div>    
+</div>
+
+<h4 class="text-center text-white">Clickable Demo Account for Trading</h4>
+
+<section class="section section-lg">
+  <div class="container">
+      <h1 class="text-center text-white">Check Our</h1>
+      <h1 class="text-center text-white"><span class="h1-personalized"> Most Traded</span> Currency Pairs</h1>
+  </div>
+  <app-carousel [imagenes]="imagenes" direction="left"></app-carousel>
+  <app-carousel [imagenes]="imagenes" direction="right"></app-carousel>
+  <app-carousel [imagenes]="imagenes" direction="left"></app-carousel>
+  <app-carousel [imagenes]="imagenes" direction="right"></app-carousel>  
+  <br>
+  <p class="text-center text-white">What are Currency pairs?</p>
+</section>
+
+<section class="section section-lg">
+  <div class="container div-lead">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center text-white h1-txt-lead">
+          <span class="h1-personalized"> Lead With Our</span> 
+          Winnig Platform 
+          <span class="txt-personalized-trad">Trad</span>
+          <span class="txt-personalized-x">x</span>
+        </h1>
+      </div>
+    </div> 
+    <div class="row row-cols-1 row-cols-md-2 g-6 div-card">
+      <div *ngFor="let card of cardTwoColumns.cards; let i = index" class="col">
+        <app-card [ngClass]="{'align-left': i % 2 !== 0, 'align-right': i % 2 === 0}"
+          [title]="card.title"  
+          [text]="card.text" 
+          [links]="card.links"
+          [img]="card.img"
+          [cardClass]="card.cardClass"
+          [textClass]="card.textClass"
+          [cardStyle]="card.cardStyle"
+          >
+        </app-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <h1 class="text-center text-white"><span class="h1-personalized"> Trade Global Markets</span> With us</h1>
+</div>
+<section class="section section-lg ">
+  <div class="container div-lead">
+    <div class="row row-markets-personalized">
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Forex</h2>
+        <img src="../../assets/img/forex.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Shares</h2>
+        <img src="../../assets/img/shares.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Commodities</h2>
+        <img src="../../assets/img/commodities.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Indices</h2>
+        <img src="../../assets/img/indices.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">Crypto</h2>
+        <img src="../../assets/img/crypto.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+      <div class="col">
+        <h2 class="h2-personalized-regular text-center text-white">ETFs</h2>
+        <img src="../../assets/img/etfs.png" class="img-fluid img-forex mx-auto d-block" alt="">
+        <a href="#" class="text-white text-center link">Learn More</a>&nbsp;<i class="fas fa-chevron-right chevron-personalized"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-lg">
+  <div class="container">
+    <h1 class="h1-personalized text-center">Exclusive <span class="text-white">Plans & Bonus</span></h1>
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Club Membership <br> Plans</h2>
+        <h1 class="text-center text-white">Up To 50% Off</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">New Account <br> Bonus</h2>
+        <h1 class="text-center text-white">$ 2,000</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Extra 20% For <br> More Trade</h2>
+        <h1 class="text-center text-white">20% Extra</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Every Referral <br> Bonus</h2>
+        <h1 class="text-center text-white">$ 1,000</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-lg">
+  <div class="container">
+    <h1 class="text-center text-white">Latest News & Top insights From Us</h1>
+    <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Master with our Exclusive reports</h2><br>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized active" aria-pressed="true">Our Ecosystem</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Trading Tools</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Education Centers</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Our Insights</button>
+    </div>
+    <br>
+  <br>
+    <h1 class="text-center text-white h1-personalized">Latest financial news & insights around the world.</h1>
+
+    <div class="row row-cols-1 row-cols-md-4 g-5" id="cardContainer">
+      <div class="col" *ngFor="let blog of cardFourColumnsBlogPaginated.paginatedCards">
+        <div class="card card-personalized">
+          <img src="{{blog.img}}" class="card-img-top rounded img-test-blog" alt="...">
+          <h5 class="h5-text-personalized">{{ blog.date | date : 'fullDate' }}</h5>
+          <div class="card-body card-body-personalized">
+            <p class="card-text card-text-personalized">{{ blog.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-pagination 
+      [currentPage]="cardFourColumnsBlogPaginated.currentPage" 
+      [totalPages]="cardFourColumnsBlogPaginated.totalPages" 
+      (pageChanged)="onPageChangedCards($event, cardFourColumnsBlogPaginated)">
+    </app-pagination>
+    <br>
+    <br>
+    <h1 class="text-center text-white">4.7 million traders <span class="h1-personalized">who trust us!</span></h1>
+    <br>
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Total Traders</h2>
+        <br>
+        <h1 class="text-center text-white">1,432,884</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Total Volume</h2>
+        <br>
+        <h1 class="text-center text-white">$60,827,147,559</h1>
+      </div>
+      <div class="col">
+        <h2 class="text-center h2-personalized-regular txt-h2-personalized-color">Total Traders</h2>
+        <br>
+        <h1 class="text-center text-white">22,731</h1>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button class="btn-primary me-md-2 btn-lg btn-start-trading" type="button">Start Trading with Trad X &nbsp;<i class="fas fa-chevron-right"></i></button>
+    </div>
+    <h1 class="text-center text-white h1-txt-lead">
+      <span class="txt-personalized-trad">Trad</span>
+      <span class="txt-personalized-x">x</span>
+      Ecosystem, partners & Community
+    </h1>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized active" aria-pressed="true">Our Ecosystem</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Our Partners</button>
+      <button type="button" class="btn-primary btn-lg me-md-2 btn-personalized">Our Community</button>
+    </div>
+  </div>  
+  <br><br>
+  <div class="container div-lead">
+    <div class="row row-cols-1 row-cols-md-4 g-6 div-card">
+      <div *ngFor="let item of cardFourColumnsPaginated.paginatedCards" class="col">
+        <app-card
+          [title]="item.title"  
+          [text]="item.text" 
+          [links]="item.links"
+          [img]="item.img"
+          [cardClass]="item.cardClass"
+          [titleClass]="item.title"
+          [textClass]="item.textClass"
+          [cardStyle]="item.cardStyle"
+          [textStyle]="item.textStyle">
+        </app-card>        
+      </div>      
+    </div>
+    <app-pagination 
+        [currentPage]="cardFourColumnsPaginated.currentPage" 
+        [totalPages]="cardFourColumnsPaginated.totalPages" 
+        (pageChanged)="onPageChangedCards($event, cardFourColumnsPaginated)">
+      </app-pagination>
+  </div>
+</section>

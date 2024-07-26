@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-personalized.active {
+    border: 1px solid #ff1802;
+    background-color: #000000;;
+}
+
+.btn-personalized {
+    background-color: #0E1422;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    gap: 7px;
+}
+.h0 {
+    color: #ff1802 !important;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 42.99px;
+}
+.h4-regular-personalized {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.btn-start-trading {
+    border-radius: 5px;
+    border: 1px solid #ff1802;
+    gap: 7px;
+    color: #ffffff;
+    background: #ff1802 !important;
+    font-size: 18px;
+    line-height: 20px;
+}
+.btn-new-crypto, .btn-make-profits {
+    border-radius: 5px;
+    border: 1px solid #ff1802 !important;
+    gap: 7px;
+    background: #0e1422;
+    box-shadow: 0px -4px 14px 0px #EA36365E inset;
+    color: #ffffff;
+}
+
+.btn-new-crypto:hover, .btn-make-profits:hover{
+    background: #ff1802 !important;
+    transition: all 0.5s ease;
+}
+.btn-start-trading:hover {
+    background: #0e1422 !important;
+    transition: all 0.5s ease;
+}
+.div-lead {
+    background-color: #0E1422;
+    /* padding: 2em 0; */
+}
+.div-card {
+    padding-bottom: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3.5%;
+}
+.row-markets-personalized {
+    padding: 4%;
+}
+.h1-personalized {
+    color: #ff1802;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.img-forex {
+    /* width: 35%; */
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.link {
+    padding-top: 2em;
+    text-align: center;
+    font-weight: 400;
+    size: 16px;
+    line-height: 24px;
+}
+.chevron-personalized {
+    color: #ff1802;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cols-form-personalized {
+    padding: 2% 2% 4% 2%
+}
+.txt-h2-personalized-color {
+    background: linear-gradient(86.41deg, #FF0F06 -12.62%, #F67F10 105.32%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-size: 24px;
+}
+.h2-personalized-regular {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+.bg-container-fluid-create-account {
+    background-color: #122655;
+}
+.col-form-create-account {
+    margin-top: .5rem !important;
+}
+.img-phone {
+    width: 527px; 
+    height: 629px;
+}
+.text-privacy-policy {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.checkbox-privacity-policy {
+    background-color: #000000 !important;
+    border: 1px solid #2853A5 !important;
+    visibility: visible;
+    opacity: 1;
+}
