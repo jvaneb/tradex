@@ -6,14 +6,17 @@ export const routes: Routes = [
     {
         path: '',
         component: ContentComponent,
+        data: { breadcrumb: 'Home' },
         children: [
             {
                 path: '',
-                loadComponent: () => import('./home/home.component').then( m => m.HomeComponent)
+                loadComponent: () => import('./home/home.component').then( m => m.HomeComponent),
+                
             },
             {
                 path: 'markets',
-                loadComponent: () => import('./markets/markets.component').then( m => m.MarketsComponent)
+                loadComponent: () => import('./markets/markets.component').then( m => m.MarketsComponent),
+                data: { breadcrumb: 'Markets' }
             }
         ]
     }

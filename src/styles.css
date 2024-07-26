@@ -119,3 +119,20 @@
     visibility: visible;
     opacity: 1;
 }
+.txt-personalized-trad {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 28.97px;
+}
+
+.txt-personalized-x {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 94.39px;
+    font-family: "Miltonian", serif;
+    font-style: normal;
+    color: #ff1802;
+    position: relative;
+    top: 10px;
+}
