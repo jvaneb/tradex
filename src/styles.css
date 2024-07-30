@@ -136,3 +136,27 @@
     position: relative;
     top: 10px;
 }
+.txt-h3-reg {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.hr-personalized{
+    color: #2853A5; 
+    width: auto;
+    opacity: initial;
+}
+#circulo {
+    border: 1px solid #2853A5;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1rem;
+    position: relative;
+    /* top: -2rem; */
+}
+.txt-h4-personalized {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+}

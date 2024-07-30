@@ -31,17 +31,22 @@
  }
 
 .txt-h4-personalized {
-    font-size: 1.25vw;
+    font-size: 18px;
     line-height: 32px;
 }
 .li-personalized {
     line-height: 32px;
     list-style-image: url('../../assets/img/check-li-origin2.png') ;
     padding-left: 2%;
+    padding-bottom: 1%;
 }
 
 .img-personalized-size {
-    width: 30%;
+    width: 20rem;
+    vertical-align: top;
+    position: relative;
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 .select-personalized {
     height: 50px;
@@ -102,3 +107,13 @@
 .input-email::placeholder, .input-password::placeholder {
     color: white;
 }
+/* @media (max-width: 767px) {
+    .d-flex.align-items-center {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .d-flex.align-items-center img {
+        margin: 10px 0 0 0; 
+    }
+} */

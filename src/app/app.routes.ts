@@ -17,6 +17,18 @@ export const routes: Routes = [
                 path: 'markets',
                 loadComponent: () => import('./markets/markets.component').then( m => m.MarketsComponent),
                 data: { breadcrumb: 'Markets' }
+            },
+            {
+                path: 'about-us',
+                loadComponent: () => import('./about-us/about-us.component').then( m => m.AboutUsComponent),
+                data: { breadcrumb: 'About us' },
+                children: [
+                    {
+                        path: 'legal-trading',
+                        loadComponent: () => import('./about-us/pages/legal-trading/legal-trading.component').then( m => m.LegalTradingComponent),
+                        data: { breadcrumb: 'Legal Trading Regulations'}
+                    }
+                ]
             }
         ]
     }
