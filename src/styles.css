@@ -160,3 +160,6 @@
     line-height: 32px;
     font-weight: 400;
 }
+.table > :not(caption) > * > * {
+    background-color: transparent !important;
+}

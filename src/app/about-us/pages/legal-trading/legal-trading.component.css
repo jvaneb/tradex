@@ -1,3 +1,6 @@
 .btn-new-crypto{
     background: transparent;
 }
+.table td, .table th{
+    border-top: .0625rem solid #2853A5;
+}
