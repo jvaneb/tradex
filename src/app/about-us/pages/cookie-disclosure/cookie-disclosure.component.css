@@ -1,0 +1,60 @@
+.a-link-personalized{
+    color: #FF1802;
+}
+.main-list {
+    counter-reset: main-counter;
+}
+  
+.main-list > li {
+    counter-increment: main-counter;
+    list-style: none;
+    position: relative;
+}
+  
+.main-list > li::before {
+    content: counter(main-counter) ". ";
+    position: absolute;
+    left: -1em;
+}
+  
+.sub-list {
+    counter-reset: sub-counter;
+}
+  
+.sub-list > li {
+    counter-increment: sub-counter;
+    list-style: none;
+    position: relative;
+}
+  
+.sub-list > li::before {
+    content: counter(main-counter) "." counter(sub-counter) " ";
+    position: absolute;
+    left: -2em;
+}
+
+.table-striped > thead > tr  {
+    background: linear-gradient(86.41deg, #FF0F06 -12.62%, #F67F10 105.32%);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.table > thead > tr > td, .table > tbody > tr > td {
+    color: white !important;
+}
+
+.table-striped > tbody > tr{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.table-striped > tbody > tr:nth-child(odd)  {
+    background-color: #0F1C3C;
+}
+
+.table-striped > tbody > tr:nth-child(even) {
+    background-color: #122655;
+}

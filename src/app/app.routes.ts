@@ -27,7 +27,12 @@ export const routes: Routes = [
                         path: 'legal-trading',
                         loadComponent: () => import('./about-us/pages/legal-trading/legal-trading.component').then( m => m.LegalTradingComponent),
                         data: { breadcrumb: 'Legal Trading Regulations'}
-                    }
+                    },
+                    {
+                        path: 'cookie-disclosure',
+                        loadComponent: () => import('./about-us/pages/cookie-disclosure/cookie-disclosure.component').then( m => m.CookieDisclosureComponent),
+                        data: { breadcrumb: 'Cookie Disclosure'}
+                    },
                 ]
             }
         ]
