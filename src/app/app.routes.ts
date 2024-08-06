@@ -33,6 +33,11 @@ export const routes: Routes = [
                         loadComponent: () => import('./about-us/pages/cookie-disclosure/cookie-disclosure.component').then( m => m.CookieDisclosureComponent),
                         data: { breadcrumb: 'Cookie Disclosure'}
                     },
+                    {
+                        path: 'staying-protected',
+                        loadComponent: () => import('./about-us/pages/staying-protected/staying-protected.component').then( m => m.StayingProtectedComponent),
+                        data: { breadcrumb: 'Staying Protected Online'}
+                    },
                 ]
             }
         ]

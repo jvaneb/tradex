@@ -33,8 +33,12 @@
     left: -2em;
 }
 
+.table > :not(caption) > * > * {
+    background-color: transparent;
+}
+
 .table-striped > thead > tr  {
-    background: linear-gradient(86.41deg, #FF0F06 -12.62%, #F67F10 105.32%);
+    background: linear-gradient(86.41deg, #FF0F06 -12.62%, #F67F10 105.32%) ;
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 500;

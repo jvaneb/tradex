@@ -1,0 +1,28 @@
+.btn-new-crypto{
+    background: transparent;
+}
+.table td, .table th{
+    border-top: .0625rem solid #2853A5;
+}
+.table > :not(caption) > * > * {
+    background-color: transparent;
+}
+.card-container {
+    max-width: 900px;
+    margin: auto;
+  }
+  .card {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+  }
+  .card-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .card-text {
+    color: #AAAAAA;
+  }

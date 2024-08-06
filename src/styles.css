@@ -16,6 +16,14 @@
     font-weight: 500;
     line-height: 42.99px;
 }
+.h02-personalized{
+    font-size: 42px;
+    line-height: 51px;
+    font-weight: 500;    
+}
+.h02-personalized-color {
+    color: #ff1802;
+}
 .h4-regular-personalized {
     font-size: 18px;
     line-height: 32px;
@@ -97,6 +105,11 @@
     font-size: 24px;
     line-height: 36px;
 }
+.h2-opt2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+}
 .bg-container-fluid-create-account {
     background-color: #122655;
 }
@@ -160,6 +173,8 @@
     line-height: 32px;
     font-weight: 400;
 }
-.table > :not(caption) > * > * {
-    background-color: transparent !important;
+.bg-personalized-images-staying{
+    border-radius: 5px;
+    background: #0F1C3B;
+    box-shadow: 1px 1px 15px 10px #117EFE;
 }
